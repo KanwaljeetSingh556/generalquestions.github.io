@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: palevioletred;
+    }
+    #container{
+        width: 600px;
+        height: 300pxpx;
+        margin: 10% 30% 20% 30%;
+        border: 2px solid red;
+        padding: 80px;
+        background-color: grey;
+    }
+    .ok{
+        width: 60%;
+        height: 60px;
+        border: 1px solid green;
+        padding: 30px;
+        color:black;
+        background-color: cornsilk;
+
+    }
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: gold;
+    }
+
+
+</style>
+<script>
+
+
+
+function func(){
+    let line1 = document.getElementById('line1') 
+    line1.innerHTML = "NO I DONT ACCEPT ALL MAJOR CREDIT CARD"
+    line1.style.color = "red"
+}
+function func2(){
+    let line2 = document.getElementById('line2')
+    line2.innerHTML = "YES I SUPPORT LOCAL FARMERS"
+    line2.style.color = "green"
+
+}
+function func3(){
+    let line3 = document.getElementById('line3')
+    line3.innerHTML = "NO I DONT USE ORGANIC FARMING"
+    line3.style.color = "blue"
+}
+
+
+
+
+
+</script>
+
+
+</head>
+<body>
+    <div id="container">
+        <h2> general questions</h2>
+<div id="line1" class="ok"> DO YOU ACCEPT ALL MAJOR CREDIT CARDS<button onclick="func()">+</button></div>
+<div id="line2" class="ok">DO YOU SUPPORT LOCAL FARMERS <button onclick="func2()">+</button></div>
+<div id="line3" class="ok">DO YOU USE ORGANIC FARMING <button onclick="func3()">+</button></div>
+
+
+    </div>
+    
+</body>
+</html>
